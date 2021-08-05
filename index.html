@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Todo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="./css/spinner.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <h1 class="title">
+                Todo List
+            </h1>
+            <p class="subtitle">
+                Todo <strong>List</strong>!
+            </p>
+        </div>
+        <form id="form">
+            <div class="field">
+                <label class="label">Todo</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="Text input" id="todo">
+                </div>
+            </div>
+            <article class="message is-danger">
+                <div class="message-header">
+                    <p>Error</p>
+                    <button type="button" class="delete" aria-label="delete"></button>
+                </div>
+                <div class="message-body">
+                    Input is <strong>empty</strong>
+                </div>
+            </article>
+            <hr/>
+            <div id="load">
+                <div class="lds-ellipsis">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <p class="subtitle">
+                    <strong>Loading...</strong>
+                </p>
+            </div>
+            <div id="todos">
+                <p class="subtitle">
+                    <strong>you dont have todo</strong>
+                </p>
+                <div class="todos">
+                    <p class="subtitle">
+                        <strong>todo1</strong>
+                    </p>
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        Done
+                    </label><br/>
+                    <button type="button" class="button">Edit</button>
+                    <button type="button" class="button is-danger">Delete</button>
+                </div>
+            </div>
+            <hr/>
+            <div class="field is-grouped">
+                <div class="control">
+                    <button type="submit" class="button is-link">Submit</button>
+                </div>
+                <div class="control">
+                    <button type="reset" class="button is-link is-light">Cancel</button>
+                </div>
+            </div>
+        </form>
+    </section>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

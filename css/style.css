@@ -1,0 +1,11 @@
+.isError {
+    display: none;
+}
+
+.isLoading {
+    display: none;
+}
+
+.isEmpty {
+    display: none;
+}
